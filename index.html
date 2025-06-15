@@ -8,40 +8,46 @@
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0,
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WW88T4BT');</script>
     <!-- End Google Tag Manager -->
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background: #fff;
         }
 
+        h1 {
+            text-align: center;
+            padding: 10px;
+            font-size: 1.5em;
+            color: #ffffff;
+            background-color: #ff00ff;
+        }
+
         .section {
-            padding: 20px;
+            padding: 10px;
             text-align: center;
         }
 
-        h2 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-
         .slideshow-container {
-            position: relative;
             max-width: 100%;
+            position: relative;
             margin: auto;
         }
 
-        .mySlides {
+        .slide {
             display: none;
         }
 
-        .mySlides img {
+        .slide img, .section img {
             width: 100%;
             border-radius: 10px;
         }
@@ -49,7 +55,7 @@
         .whatsapp-btn {
             display: inline-block;
             background-color: #25d366;
-            color: #fff;
+            color: white;
             padding: 10px 20px;
             border-radius: 30px;
             text-decoration: none;
@@ -68,149 +74,130 @@
             bottom: 20px;
             right: 20px;
             background-color: #25d366;
-            border-radius: 50px;
-            text-align: center;
+            border-radius: 50%;
             z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .float-whatsapp img {
-            margin-top: 10px;
-            width: 40px;
-            height: 40px;
+            width: 35px;
+            height: 35px;
         }
     </style>
 </head>
 
 <body>
-
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WW88T4BT"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <h1 style="text-align:center; padding: 10px;">Convite de Aniversário Infantil</h1>
+    <h1>Convite de Aniversário Infantil</h1>
 
-    <!-- Seção Fale Conosco -->
+    <!-- 🟢 Seção Fale Conosco -->
     <div class="section">
-        <div class="slideshow-container">
-            <div class="mySlides">
-                <img src="img/banner-convite-aniversario-faleconosco-01.png" alt="Convite de Aniversário Digital - Praticidade e Encanto">
-            </div>
-            <div class="mySlides">
-                <img src="img/banner-convite-aniversario-faleconosco-02.png" alt="Convite de Aniversário Digital - Oriente seus convidados">
-            </div>
-            <div class="mySlides">
-                <img src="img/banner-convite-aniversario-faleconosco-03.png" alt="Convite de Aniversário Digital - Convite para cada ocasião">
-            </div>
+        <div class="slideshow-container" id="fale-conosco">
+            <div class="slide"><img src="img/banner-convite-aniversario-faleconosco-01.png"></div>
+            <div class="slide"><img src="img/banner-convite-aniversario-faleconosco-02.png"></div>
+            <div class="slide"><img src="img/banner-convite-aniversario-faleconosco-03.png"></div>
         </div>
-        <a class="whatsapp-btn" href="https://wa.me/5528999174882" target="_blank">Fale Conosco no WhatsApp</a>
+        <a class="whatsapp-btn" href="https://wa.me/5528999174882" target="_blank">Fale Conosco</a>
     </div>
 
-    <!-- Seção Dinâmico -->
+    <!-- 🟢 Seção Dinâmico -->
     <div class="section">
-        <div class="slideshow-container">
-            <div class="mySlides">
-                <img src="img/banner-convite-aniversario-dinamico-01.png" alt="Convite Dinâmico com Foto">
-            </div>
-            <div class="mySlides">
-                <img src="img/banner-convite-aniversario-dinamico-02.png" alt="Convite Dinâmico com Foto">
-            </div>
-            <div class="mySlides">
-                <img src="img/banner-convite-aniversario-dinamico-03.png" alt="Convite Dinâmico com Foto">
-            </div>
+        <div class="slideshow-container" id="dinamico">
+            <div class="slide"><img src="img/banner-convite-aniversario-dinamico-01.png"></div>
+            <div class="slide"><img src="img/banner-convite-aniversario-dinamico-02.png"></div>
+            <div class="slide"><img src="img/banner-convite-aniversario-dinamico-03.png"></div>
         </div>
-        <a class="whatsapp-btn" href="https://wa.me/5528999174882" target="_blank">Pedir o Seu no WhatsApp</a>
+        <a class="whatsapp-btn" href="https://wa.me/5528999174882" target="_blank">Pedir o Seu</a>
     </div>
 
-    <!-- Seção Animado -->
+    <!-- 🟢 Seção Animado -->
     <div class="section">
-        <img src="img/banner-convite-aniversario-animado-musica-foto.png" alt="Convite Animado com Música e Foto">
-        <a class="whatsapp-btn" href="https://wa.me/5528999174882" target="_blank">Quero Esse Convite</a>
+        <img src="img/banner-convite-aniversario-animado-musica-foto.png">
+        <br>
+        <a class="whatsapp-btn" href="https://wa.me/5528999174882" target="_blank">Quero Esse</a>
     </div>
 
-    <!-- Seção Animado com Vídeo -->
+    <!-- 🟢 Seção Animado com Vídeo -->
     <div class="section">
-        <img src="img/banner-convite-aniversario-animado-video.png" alt="Convite Animado com Vídeo, Música e Foto">
-        <a class="whatsapp-btn" href="https://wa.me/5528999174882" target="_blank">Peça o Seu Agora</a>
+        <img src="img/banner-convite-aniversario-animado-video.png">
+        <br>
+        <a class="whatsapp-btn" href="https://wa.me/5528999174882" target="_blank">Peça Agora</a>
     </div>
 
-    <!-- Seção Animado Plus -->
+    <!-- 🟢 Seção Animado Plus -->
     <div class="section">
-        <div class="slideshow-container">
-            <div class="mySlides">
-                <img src="img/banner-convite-aniversario-animado-plus-01.png" alt="Convite Animado Plus - Mais Vendido">
-            </div>
-            <div class="mySlides">
-                <img src="img/banner-convite-aniversario-animado-plus-02.png" alt="Convite Animado Plus com Sugestão de Presente">
-            </div>
+        <div class="slideshow-container" id="plus">
+            <div class="slide"><img src="img/banner-convite-aniversario-animado-plus-01.png"></div>
+            <div class="slide"><img src="img/banner-convite-aniversario-animado-plus-02.png"></div>
         </div>
         <a class="whatsapp-btn" href="https://wa.me/5528999174882" target="_blank">Quero o Plus</a>
     </div>
 
-    <!-- Seção Interativo Clicável -->
+    <!-- 🟢 Seção Interativo -->
     <div class="section">
-        <div class="slideshow-container">
-            <div class="mySlides">
-                <img src="img/banner-convite-aniversario-interativo-01.png" alt="Convite Interativo com Botões">
-            </div>
-            <div class="mySlides">
-                <img src="img/banner-convite-aniversario-interativo-02.png" alt="Convite Interativo com Sugestão de Presente">
-            </div>
-            <div class="mySlides">
-                <img src="img/banner-convite-aniversario-interativo-03.png" alt="Convite Interativo com Vídeo Animado">
-            </div>
+        <div class="slideshow-container" id="interativo">
+            <div class="slide"><img src="img/banner-convite-aniversario-interativo-01.png"></div>
+            <div class="slide"><img src="img/banner-convite-aniversario-interativo-02.png"></div>
+            <div class="slide"><img src="img/banner-convite-aniversario-interativo-03.png"></div>
         </div>
-        <a class="whatsapp-btn" href="https://wa.me/5528999174882" target="_blank">Pedir Convite Interativo</a>
+        <a class="whatsapp-btn" href="https://wa.me/5528999174882" target="_blank">Quero Interativo</a>
     </div>
 
-    <!-- Seção Livros de Colorir -->
+    <!-- 🟢 Seção Livros -->
     <div class="section">
-        <div class="slideshow-container">
-            <div class="mySlides">
-                <img src="img/banner-livro-colorir-01.png" alt="Livros de Colorir - Vários Temas">
-            </div>
-            <div class="mySlides">
-                <img src="img/banner-livro-colorir-02.png" alt="Livro Bobbie Goods e outros temas">
-            </div>
+        <div class="slideshow-container" id="livros">
+            <div class="slide"><img src="img/banner-livro-colorir-01.png"></div>
+            <div class="slide"><img src="img/banner-livro-colorir-02.png"></div>
         </div>
         <a class="whatsapp-btn" href="https://wa.me/5528999174882" target="_blank">Quero Meu Livro</a>
     </div>
 
-    <!-- Seção Save The Date -->
+    <!-- 🟢 Seção Save the Date -->
     <div class="section">
-        <div class="slideshow-container">
-            <div class="mySlides">
-                <img src="img/banner-save-the-date-tags-01.png" alt="Save The Date, Tags e Molduras">
-            </div>
-            <div class="mySlides">
-                <img src="img/banner-etiquetas-escolares-02.png" alt="Etiquetas Escolares Personalizadas">
-            </div>
+        <div class="slideshow-container" id="save">
+            <div class="slide"><img src="img/banner-save-the-date-tags-01.png"></div>
+            <div class="slide"><img src="img/banner-etiquetas-escolares-02.png"></div>
         </div>
-        <a class="whatsapp-btn" href="https://wa.me/5528999174882" target="_blank">Fazer Meu Pedido</a>
+        <a class="whatsapp-btn" href="https://wa.me/5528999174882" target="_blank">Fazer Pedido</a>
     </div>
 
-    <!-- Botão Flutuante WhatsApp -->
+    <!-- Botão Flutuante -->
     <a class="float-whatsapp" href="https://wa.me/5528999174882" target="_blank">
-        <img src="img/whatsapp-icon-convite-aniversario.png" alt="Fale Conosco WhatsApp">
+        <img src="img/whatsapp-icon-convite-aniversario.png" alt="WhatsApp">
     </a>
 
-    <!-- Script Slideshow -->
+    <!-- Script para cada Slideshow separado -->
     <script>
-        let slideIndex = 0;
-        showSlides();
+        function startSlideshow(containerId) {
+            let index = 0;
+            const container = document.getElementById(containerId);
+            const slides = container.getElementsByClassName('slide');
 
-        function showSlides() {
-            let slides = document.getElementsByClassName("mySlides");
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+            function showSlides() {
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                index++;
+                if (index > slides.length) {index = 1}
+                slides[index-1].style.display = "block";
+                setTimeout(showSlides, 5000); // Tempo 5 segundos
             }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}
-            slides[slideIndex-1].style.display = "block";
-            setTimeout(showSlides, 5000); // Troca a cada 5 segundos
-        }
-    </script>
 
+            showSlides();
+        }
+
+        startSlideshow('fale-conosco');
+        startSlideshow('dinamico');
+        startSlideshow('plus');
+        startSlideshow('interativo');
+        startSlideshow('livros');
+        startSlideshow('save');
+    </script>
 </body>
 </html>
-
