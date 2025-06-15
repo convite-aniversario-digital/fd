@@ -82,8 +82,16 @@
         }
 
         .float-whatsapp img {
-            width: 35px;
-            height: 35px;
+            width: 45px;
+            height: 45px;
+        }
+
+        footer {
+            background-color: #ff00ff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -171,11 +179,13 @@
     <a class="float-whatsapp" href="https://wa.me/5528999174882" target="_blank">
         <img src="img/whatsapp-icon-convite-aniversario.png" alt="WhatsApp">
     </a>
-<!-- 🟪 Rodapé -->
-<footer class="footer">
-    <p>© 2025 Convite de Aniversário Digital | Todos os direitos reservados.</p>
-    <p>Desenvolvido por <strong>Convite de Aniversário Digital</strong></p>
-</footer>
+
+    <!-- 🟪 Rodapé -->
+    <footer>
+        <p>© 2025 Convite de Aniversário Digital | Todos os direitos reservados.</p>
+        <p>Desenvolvido por <strong>Convite de Aniversário Digital</strong></p>
+    </footer>
+
     <!-- Script para cada Slideshow separado -->
     <script>
         function startSlideshow(containerId) {
@@ -190,7 +200,7 @@
                 index++;
                 if (index > slides.length) {index = 1}
                 slides[index-1].style.display = "block";
-                setTimeout(showSlides, 5000); // Tempo 5 segundos
+                setTimeout(showSlides, 5000); // Tempo 8 segundos
             }
 
             showSlides();
@@ -202,7 +212,6 @@
         startSlideshow('interativo');
         startSlideshow('livros');
         startSlideshow('save');
-
-</script>
+    </script>
 </body>
 </html>
